@@ -25,6 +25,7 @@
     self.delegate = self;
     self.dataSource = self;
     [self selectRow:0 inComponent:0 animated:YES]; // Workaround for missing selection indicator lines (see https://stackoverflow.com/questions/39564660/uipickerview-selection-indicator-not-visible-in-ios10)
+    self.subviews[1].backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
   }
   return self;
 }
